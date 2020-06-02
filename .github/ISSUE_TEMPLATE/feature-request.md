@@ -1,7 +1,7 @@
 ---
-name: 機能提案
+name: "🚀 機能提案"
 about: 機能提案はこちら
-title: '機能提案をありがとうございます！'
+title: ''
 labels: ''
 assignees: ''
 
