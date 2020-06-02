@@ -24,5 +24,3 @@ assignees: ''
 
 <!-- あなたが追加したい機能はどういったものなのか教えてください -->
 
-<!-- What is a solution you want to add? -->
-
