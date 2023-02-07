@@ -6,4 +6,4 @@
 
 ## 参考
 
-- [kintone JavaScript Client (@kintone/rest-api-client) – cybozu developer network](https://developer.cybozu.io/hc/ja/articles/900000767263)
+- [kintone JavaScript Client (@kintone/rest-api-client) – cybozu developer network](https://cybozu.dev/ja/kintone/sdk/rest-api-client/kintone-javascript-client)
