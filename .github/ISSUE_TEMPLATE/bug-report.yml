@@ -1,0 +1,84 @@
+name: "🐛 バグ報告"
+description: js-sdk, cli-kintoneのバグ報告はこちら
+labels: ["bug"]
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます！ 以下のフォームに記入をお願いします。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: バグの概要を記入してください
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: 対象パッケージ
+      description: どのパッケージに対するバグ報告ですか？
+      multiple: true
+      options:
+        - "@kintone/rest-api-client"
+        - "@kintone/customize-uploader"
+        - "@kintone/plugin-manifest-validator"
+        - "@kintone/create-plugin"
+        - "@kintone/plugin-packer"
+        - "@kintone/webpack-plugin-kintone-plugin"
+        - "@kintone/plugin-uploader"
+        - "@kintone/dts-gen"
+        - "@kintone/cli-kintone"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 対象バージョン
+      placeholder: 例: vX.Y.Z
+      description: どのバージョンに対するバグ報告ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: |
+        バグの再現手順を教えてください。
+        もし再現リポジトリや[Gist](https://gist.github.com/)などの外部リンクがある場合は、そちらを記入してください。
+      placeholder: |
+        1. @kintone/... をインストールする
+        2. 以下のコードを実行する
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期待する挙動
+      description: 期待する挙動を教えてください
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: 実際の挙動
+      description: 実際の挙動を教えてください
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      placeholder: |
+        - Operating System（OS）: ...
+        - ブラウザ: ...
+        - Node.jsのバージョン: ...
+        - TypeScriptのバージョン: ...
+      description: |
+        バグが発生した環境について教えてください
+        Node.js環境の場合、以下のコマンドの結果を貼り付けることができます。
+        `npx envinfo --system --npmPackages '{typescript,@kintone/*}' --binaries --browsers`
+    validations:
+      required: true
