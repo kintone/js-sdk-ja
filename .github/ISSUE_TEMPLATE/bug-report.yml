@@ -36,7 +36,8 @@ body:
     id: version
     attributes:
       label: 対象バージョン
-      placeholder: 例: vX.Y.Z
+      placeholder: |
+        例: vX.Y.Z
       description: どのバージョンに対するバグ報告ですか？
     validations:
       required: true
