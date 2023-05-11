@@ -6,7 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        バグ報告ありがとうございます！ 以下のフォームに記入をお願いします。
+        バグ報告ありがとうございます！
+        以下のフォームに記入をお願いします。
   - type: textarea
     id: summary
     attributes:
