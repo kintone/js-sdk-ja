@@ -1,0 +1,42 @@
+name: "🚀 機能要望"
+description: 機能要望はこちら
+labels: ["feature request"]
+title: "[Feature Request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        機能要望ありがとうございます！
+        以下のフォームに記入をお願いします。
+  - type: dropdown
+    id: package
+    attributes:
+      label: 対象パッケージ
+      description: どのパッケージに対する機能要望ですか？
+      multiple: true
+      options:
+        - "@kintone/rest-api-client"
+        - "@kintone/customize-uploader"
+        - "@kintone/plugin-manifest-validator"
+        - "@kintone/create-plugin"
+        - "@kintone/plugin-packer"
+        - "@kintone/webpack-plugin-kintone-plugin"
+        - "@kintone/plugin-uploader"
+        - "@kintone/dts-gen"
+        - "@kintone/cli-kintone"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: なぜ
+      description: なぜその機能が欲しいのか、背景情報を教えてください
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 何を
+      description: どのような機能が欲しいのか教えてください
+    validations:
+      required: true
