@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Cybozu Developer Community
+    url: https://community.cybozu.dev/
+    about: 開発者同士で質問やディスカッションができるコミュニティプラットフォームです。
+  - name: 🌏 Kintone Developer Forum (英語版コミュニティ)
+    url: https://forum.kintone.dev/
+    about: Ask questions and discuss with other users in Kintone Developer Forum.
+  - name: 📤 API 専用相談窓口
+    url: https://jp.cybozu.help/k/ja/trouble_shooting/developer/developer_qa.html
+    about: APIの仕様に関するお問い合わせはこちら。
